@@ -1,0 +1,155 @@
+
+class Exceptions
+{
+
+public static void main(String args[])
+{
+        try 
+      {
+            int a = 5, b = 0;
+            int c = a/b; 
+            System.out.println("Result ="+ c);
+        }
+        catch (ArithmeticException e) 
+
+        {
+            System.err.println("Divide by zero Exception");
+        }
+    
+       
+        try
+        {
+            int a[] = new int[3];
+            
+            a[0] = 1;
+            a[1] = 2;
+            a[2] = 3;
+            a[5] = 5;
+
+           System.out.println( "a ="  a[5]);
+
+        }
+
+
+        catch (ArrayIndexOutOfBoundsException e) 
+
+        {
+            System.out.println("Array of index exceeded");
+        }
+
+
+
+
+        try 
+        {
+            String str= null ; 
+
+            char c = str.charAt(2);
+
+            System.out.println("accesing the null string: " +c);
+        }
+
+        catch (NullPointerException e) 
+
+        {
+            System.out.println("raise nullpointer exception");
+        }
+
+
+}
+
+}
+
+
+
+class info{
+	
+   int id ;
+
+   String name;
+
+
+   info( int id , String Name)
+   
+   {
+   	
+      this.id = id;
+
+      this.name = name;
+
+   }
+
+ 
+
+}
+
+
+class Employee {
+ 	
+
+
+    public static void main (String[] args){
+    	
+
+      List<> emp = new ArrayList[3];
+
+      emp[0] = new info(11 , "Abc");
+      emp[1] = new info(22 , "kepler");
+      emp[2] = new info(33 , "kumar");
+
+      
+       for ( info e : emp){
+       	
+        System.out.println("Emp id :" +id+ "EmpNAme :" +name);
+
+       }
+
+    }
+
+
+
+
+ }
+
+
+class Student {
+	
+	int rollno ;
+	String Name ;
+
+   
+    Student (int rollno , String Name){
+    	
+    	this.rollno = rollno;
+    	this.Name = Name ;
+    }
+
+}
+
+
+class marks extends Student{
+	
+
+
+}
+
+
+
+class result Marks{
+	
+
+}
+
+
+class studentdata{
+	
+	public static void main(String[] args){
+		
+		Student s1 = new Student(1 , "abc");
+		
+		 
+
+
+	}
+
+}
